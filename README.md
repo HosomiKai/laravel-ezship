@@ -48,9 +48,9 @@ EZSHIP_MAP_REDIRECT_URL=${APP_URL}/ezship_map
 `routes/web.php`
 
 ```
-    Route::match(['GET', 'POST'], 'ezship', 'EzshipController@handle');
+    Route::get('ezship', 'EzshipController@handle');
 ```
-註：需將你的ezship網址註冊到 VerifyCsrfToken middleware 裡的 $except裡， 查詢訂單回傳是post
+註：需將你的ezship 路由網址註冊到 VerifyCsrfToken middleware 裡的 $except裡，以過濾post方法
 
 `EzshipController:`
 

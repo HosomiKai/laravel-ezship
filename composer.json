@@ -1,0 +1,44 @@
+{
+    "name": "hosomikai/laravel-ezship",
+    "description": "台灣便利配ezship物流api",
+    "keywords": [
+        "library",
+        "ezship",
+        "台灣便利配",
+        "物流"
+    ],
+    "type": "library",
+    "authors": [
+        {
+            "name": "hosomikai",
+            "email": "showking111@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "phpunit/phpunit": "^8.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3|~4",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hosomikai\\Ezship\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Hosomikai\\Ezship\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hosomikai\\Ezship\\EzshipServiceProvider"
+            ],
+            "aliases": {
+                "Ezship": "Hosomikai\\Ezship\\Facades\\Ezship"
+            }
+        }
+    }
+}

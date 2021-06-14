@@ -4,6 +4,9 @@
 $directories = [
     'config',
     'src',
+    'database',
+    'routes',
+    'tests',
 ];
 
 $finder = PhpCsFixer\Finder::create();

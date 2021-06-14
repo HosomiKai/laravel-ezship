@@ -1,10 +1,18 @@
 {
     "name": "hosomikai/laravel-ezship",
     "description": "台灣便利配ezship物流API",
+    "keywords": [
+        "library",
+        "ezship",
+        "台灣便利配",
+        "物流"
+    ],
     "type": "library",
     "require": {
         "php": "^7.0|^8.0"
     },
+    "homepage": "https://github.com/HosomiKai/laravel-ezship",
+    "license": "MIT",
     "authors": [
         {
             "name": "hosomikai",

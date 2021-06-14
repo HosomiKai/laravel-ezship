@@ -175,7 +175,7 @@ Route::post('ezship_map', 'EzshipController@handleMap');
     ....
 ```
 
-### 4. Hosomikai\Ezship\EzshipOrderStatusConstant
+### 4. Hosomikai\Ezship\Contracts\EzshipOrder
 | 參數            |     值     | 說明                |
 |-----------------|:------------:|:-----------------:|
 | STORE_NEW_TYPE1 |    A01       |   超商取貨新訂單，不需在ezShip上確認訂單，可直接印單 (ezShip系統將回覆sn_id)        |

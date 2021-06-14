@@ -12,9 +12,6 @@ Made with ❤️ by [hosomikai](https://github.com/HosomiKai)
 ## Requirement for laravel
 
 ## Installation
-Before you include the package, ensure you are exactly a member of hosomikai and you have access right to access all about packages of php team.
-
-Via Composer
 
 ### 1. Require the Package
 After creating your new Laravel application and composer setting, you can include the package with the following command:

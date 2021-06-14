@@ -9,7 +9,7 @@ Made with ❤️ by [hosomikai](https://github.com/HosomiKai)
 
 <hr>
 
-## Requirement for laravel 5.6 - 8.x
+## Requirement for laravel
 
 ## Installation
 Before you include the package, ensure you are exactly a member of hosomikai and you have access right to access all about packages of php team.

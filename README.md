@@ -159,10 +159,10 @@ Route::post('ezship_map', 'EzshipController@handleMap');
     $orderId = now()->format('YmdHis');                     //商店訂單編號                 
     $amount = 100;                                          //包裹價值金額或代收金額
     $needPay = true;                                        //是否需要代收款(取貨付款或單純取貨)
-    $recipientName = 'hosomikai';                              //取貨人或收件人姓名(需與收件人證件姓名一致)
-    $recipientEmail = 'service@hosomikai.com';                 //取貨人或收件人信箱
+    $recipientName = 'hosomikai';                           //取貨人或收件人姓名(需與收件人證件姓名一致)
+    $recipientEmail = 'service@hosomikai.com';              //取貨人或收件人信箱
     $recipientMobile = '0953539459';                        //取貨人或收件人電話
-    $stCode = 'yourstcode';                                 //code you get from (EzshipMapResponse)->getCode();
+    $stCode = 'yourstcode';                                 //code you get from (EzshipMapResponse)->getStoreCode();
 
     $order = Ezship::newOrder($amount, $needPay, $orderId)
                 ->recipient($recipientName', $recipientMobile, $recipientEmail')
@@ -171,7 +171,6 @@ Route::post('ezship_map', 'EzshipController@handleMap');
     
     //post by redirect form
     return $order->checkout();
-
     ....
 ```
 
